@@ -4,12 +4,12 @@ import logo from '../../../assets/img/logo.webp'
 const NavBar = () => {
     const NavItems = <>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/'>All Toys</Link></li>
-        <li><Link to='/'>My Toys</Link></li>
-        <li><Link to='/'>Add A Toy</Link></li>
-        <li><Link to='/'>Blogs</Link></li>
-        <li><Link to='/'>Profile</Link></li>
-        </>
+        <li><Link to=''>All Toys</Link></li>
+        <li><Link to=''>My Toys</Link></li>
+        <li><Link to=''>Add A Toy</Link></li>
+        <li><Link to=''>Blogs</Link></li>
+
+    </>
     return (
 
         <div className="navbar bg-base-100">
@@ -20,7 +20,7 @@ const NavBar = () => {
                     </label>
                     <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                         {NavItems}
-                        
+
                         <li><a>LogIn</a></li>
                     </ul>
                 </div>
@@ -42,8 +42,9 @@ const NavBar = () => {
 
                 </ul>
             </div>
-            <div className="navbar-end">
-                <button className="btn glass"><Link to='/login'>Login</Link></button>
+            <div className="navbar-end flex justify-between">
+                <li><Link >Profile</Link></li>
+                <button className="btn glass bg-black"><Link to='/login'>Login</Link></button>
                 {/* <a className="btn"></a> */}
             </div>
         </div>
