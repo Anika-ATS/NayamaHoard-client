@@ -9,7 +9,7 @@ const Footer = () => {
                 <div className='flex justify-between '>
                     <img className='w-14 h-14 p-2 space-x-3 rounded-full  '
                         src={logo} alt="" /> </div>
-                <p className='text-base'>Nyama Hoard <br />An amazing service provider for children happiness since 2023</p>
+                <p className='text-base'>Nyama Hoard <br/>An amazing service provider for children happiness since 2023.<br/><br/>Copyright © 2023 - All right reserved by Nyama Hoard Brand.</p>
             </div>
 
 
@@ -45,14 +45,14 @@ const Footer = () => {
                 </label>
 
             </a>
-            
-                
-                    <div className="relative py-2">
-                        <input type="text" placeholder="Your Email address" className="input input-bordered w-full pr-16" />
-                        <button className="btn btn-base absolute top-2 right-0 rounded rounded-l-none">Submit</button>
-                    </div>
-               
-          
+
+
+            <div className="relative py-2">
+                <input type="text" placeholder="Your Email address" className="input input-bordered w-full pr-16" />
+                <button className="btn btn-base absolute top-2 right-0 rounded rounded-l-none">Submit</button>
+            </div>
+
+
 
             <div className="md:place-self-center md:justify-self-end">
                 <div className="grid grid-flow-col gap-4">

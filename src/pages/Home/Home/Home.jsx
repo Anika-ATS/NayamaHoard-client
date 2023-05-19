@@ -2,6 +2,7 @@
 
 import SideBar from "../../SideNavBar/SideBar";
 import Banner from "../Banner/Banner";
+import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
     return (
@@ -12,8 +13,10 @@ const Home = () => {
                 
                 <div className="grid  flex-grow ">
                     <Banner></Banner>
+                    
                 </div>
             </div>
+            <Gallery></Gallery>
         </div>
     );
 };

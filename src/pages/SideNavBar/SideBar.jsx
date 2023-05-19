@@ -12,7 +12,7 @@ const SideBar = () => {
         </>
     return (
         <div className="flex">
-            <div className="flex flex-col h-screen p-3 bg-base-300 shadow w-60">
+            <div className="flex flex-col h-full p-3 bg-base-300 shadow w-60">
 
                 <div className="space-y-3">
                     <div className="flex items-center">
@@ -73,11 +73,11 @@ const SideBar = () => {
                         />
                     </div> */}
                     <div className="flex-1 ">
-                        <ul className="pt-2 pb-4 space-y-1 text-sm">
+                        <ul className="pt-8 pb-5 space-y-1 text-sm">
                             <li className="rounded-sm bg-base-100">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -99,7 +99,7 @@ const SideBar = () => {
                             <li className="rounded-sm ">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
 
                                     <span className="text-purple-300">All toys</span>
@@ -108,7 +108,7 @@ const SideBar = () => {
                             <li className="rounded-sm">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
 
                                     <span className="text-purple-300">My Toys</span>
@@ -117,7 +117,7 @@ const SideBar = () => {
                             <li className="rounded-sm">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
 
                                     <span className="text-purple-300">Add A Toy</span>
@@ -126,7 +126,7 @@ const SideBar = () => {
                             <li className="rounded-sm">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
 
                                     <span className="text-purple-300">Blogs</span>
@@ -134,7 +134,7 @@ const SideBar = () => {
                                 </a>
                             </li>
                             <li className="rounded-sm">
-                                <a className="flex items-center p-2 space-x-3 rounded-md bg-black  mb-4 ">
+                                <a className="flex items-center p-2 space-x-3 rounded-md bg-black  mb-5 ">
                                     
                                     <span className="text-purple-300">Profile</span>
                                 </a>
@@ -144,7 +144,7 @@ const SideBar = () => {
                             <li className="rounded-sm bg-base-300">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-4"
+                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ const SideBar = () => {
                                     <span className="text-purple-300">LogIn</span>
                                 </a>
                             </li>
-                            <li className="rounded-sm bg-base-300">
+                            {/* <li className="rounded-sm bg-base-300">
                                 <a
                                     href="#"
                                     className="flex items-center p-2 space-x-3 rounded-md bg-black"
@@ -184,7 +184,7 @@ const SideBar = () => {
                                     </svg>
                                     <span className="text-purple-300">Logout</span>
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
