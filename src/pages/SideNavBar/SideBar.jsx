@@ -1,6 +1,15 @@
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.webp';
 
 const SideBar = () => {
+    const ItemsSideBar = <>
+        <li><Link to='/'>Home</Link></li>
+        <li><Link to=''>All Toys</Link></li>
+        <li><Link to=''>My Toys</Link></li>
+        <li><Link to=''>Add A Toy</Link></li>
+        <li><Link to=''>Blogs</Link></li>
+        <li><Link to=''>Profile</Link></li>
+        </>
     return (
         <div className="flex">
             <div className="flex flex-col h-screen p-3 bg-base-300 shadow w-60">
@@ -14,24 +23,11 @@ const SideBar = () => {
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                 </label>
                                 <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                                    <li><a>Home</a></li>
-                                    {/* <li tabIndex={0}>
-                                        <a className="justify-between">
-                                            Parent
-                                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                        </a>
-                                        <ul className="p-2">
-                                            <li><a>Submenu 1</a></li>
-                                            <li><a>Submenu 2</a></li>
-                                        </ul>
-                                    </li> */}
-                                    <li><a>All Toys</a></li>
-                                    <li><a>My Toys</a></li>
-                                    <li><a>Add A Toy</a></li>
-                                    <li><a>Blogs</a></li>
-                                    <li><a>Profile</a></li>
+                                   
+                                    
+                                    {ItemsSideBar}
                                     <li><a>LogIn</a></li>
-                                    <li><a>LogOut</a></li>
+                                    
                                 </ul>
                             </div>
                             <div className='flex justify-between '>
@@ -97,7 +93,7 @@ const SideBar = () => {
                                             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                                         />
                                     </svg>
-                                    <span className="text-purple-300">Home</span>
+                                    <span className="text-purple-300"><Link to='/'>Home</Link></span>
                                 </a>
                             </li>
                             <li className="rounded-sm ">
