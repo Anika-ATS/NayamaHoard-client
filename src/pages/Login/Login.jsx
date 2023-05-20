@@ -1,12 +1,39 @@
+import { useContext } from 'react';
 import login from '../../assets/img/login.jpg';
 import NavBar from '../Shared/NavigationBar/NavBar';
-
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Providers/AuthProviders';
 
 const Login = () => {
-    // const handleOnLogin=event=>{
-    //     event.preventDefault();
-    // }
+    const {SignInUser}=useContext(AuthContext);
+    const navigate=useNavigate();
+    const location=useLocation();
+    console.log('bye',location);
+    const from=location.state?.from?.pathname||'/';
+
+
+    const handleOnLogin=event=>{
+        event.preventDefault();
+        const form=event.target;
+        
+        const email=form.email.value;
+   
+        const password=form.password.value;
+    
+       console.log(password,email);
+    
+        //create user
+        SignInUser(email,password)
+            .then(result=>{
+                const LogInUser=result.user;
+                console.log(LogInUser);
+                navigate(from,{replace:true});
+            })
+            .catch(error=>{
+                console.log(error);
+            })
+       }
     return (
         <div>
             <NavBar></NavBar>
@@ -21,27 +48,28 @@ const Login = () => {
                         
                     </div>
                     {/* onSubmit={handleOnLogin()} */}
-                    <form >
+                    <form onSubmit={handleOnLogin} >
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" />
+                                <input type="text" placeholder="email" name='email' className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" />
+                                <input type="text" placeholder="password" name='password' className="input input-bordered" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
                             <div><button className="btn btn-outline btn-primary">Google Sign-in</button></div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                
+                                <input  className="btn btn-primary"  type='submit'  value='Login' />
                             </div>
                         </div>
                     </div>

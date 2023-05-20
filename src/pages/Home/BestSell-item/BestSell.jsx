@@ -20,11 +20,11 @@ const BestSell = () => {
                     </figure>
                     <div className="card-body items-center text-center">
                         {/* The button to open modal */}
-                        <label htmlFor="my-modal-4" className="btn btn-outline text-white">Sell Info</label>
+                        <label htmlFor="my-modal-1" className="btn btn-outline text-white">Sell Info</label>
 
                         {/* Put this part before </body> tag */}
-                        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-                        <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                        <input type="checkbox" id="my-modal-1" className="modal-toggle" />
+                        <label htmlFor="my-modal-1" className="modal cursor-pointer">
                             <label className="modal-box relative" htmlFor="">
                                 <h3 className="text-lg font-bold text-purple-800">This Product has 5% off!</h3>
                                 <p className="py-4">Code:2204B<br/>Wanna Buy?Go to Order Section</p>
@@ -42,11 +42,11 @@ const BestSell = () => {
                         </figure>
                         <div className="card-body items-center text-center">
                         {/* The button to open modal */}
-                        <label htmlFor="my-modal-4" className="btn btn-outline ">Sell Info</label>
+                        <label htmlFor="my-modal-2" className="btn btn-outline ">Sell Info</label>
 
                         {/* Put this part before </body> tag */}
-                        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-                        <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                        <input type="checkbox" id="my-modal-2" className="modal-toggle" />
+                        <label htmlFor="my-modal-2" className="modal cursor-pointer">
                             <label className="modal-box relative" htmlFor="">
                                 <h3 className="text-lg font-bold text-purple-800">This Product has 3% off!</h3>
                                 <p className="py-4">Code:2204C<br/>Wanna Buy?Go to Order Section</p>
@@ -66,11 +66,11 @@ const BestSell = () => {
                     </figure>
                     <div className="card-body items-center text-center">
                         {/* The button to open modal */}
-                        <label htmlFor="my-modal-4" className="btn btn-outline">Sell Info</label>
+                        <label htmlFor="my-modal-3" className="btn btn-outline">Sell Info</label>
 
                         {/* Put this part before </body> tag */}
-                        <input type="checkbox" id="my-modal-4" className="modal-toggle" />
-                        <label htmlFor="my-modal-4" className="modal cursor-pointer">
+                        <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+                        <label htmlFor="my-modal-3" className="modal cursor-pointer">
                             <label className="modal-box relative" htmlFor="">
                                 <h3 className="text-lg font-bold text-purple-800">This Product has 7% off!</h3>
                                 <p className="py-4">Code:2204D<br/>Wanna Buy?Go to Order Section</p>

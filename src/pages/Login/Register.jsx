@@ -1,11 +1,32 @@
 import { Link } from 'react-router-dom';
 import register from '../../assets/img/register.jpg';
 import NavBar from '../Shared/NavigationBar/NavBar';
+import { useContext } from 'react';
+import { AuthContext } from '../../Providers/AuthProviders';
 
 const Register = () => {
-    // const handleOnSignUp=event=>{
-    //     event.preventDefault();
-    // }
+    const {createUser}=useContext(AuthContext);
+    //getting form value
+    const handleSignUp= event =>{
+    event.preventDefault();
+    const form=event.target;
+    const name=form.name.value;
+    const email=form.email.value;
+    const photo=form.photo.value;
+    const password=form.password.value;
+
+   console.log(name,password,email);
+
+    //create user
+     createUser(email,password)
+        .then(result=>{
+            const createdUser=result.user;
+            console.log(createdUser);
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+   }
     return (
         <div >
             <NavBar></NavBar>
@@ -19,27 +40,27 @@ const Register = () => {
                         
                     </div>
                     {/* onSubmit={handleOnSignUp()} */}
-                    <form >
+                    <form onSubmit={handleSignUp}>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input type="text" placeholder="Name"  className="input input-bordered" />
+                                <input type="text" placeholder="Name" name='name' className="input input-bordered" />
                             </div>
 
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered" />
+                                <input type="text" placeholder="email" name='email' className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered" />
+                                <input type="text" placeholder="password" name='password' className="input input-bordered" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
@@ -48,11 +69,12 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Photo Url</span>
                                 </label>
-                                <input type="text" placeholder="photo" className="input input-bordered" />
+                                <input type="text" placeholder="photo" name='photo' className="input input-bordered" />
                             </div>
                             
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Sign In</button>
+                            <input  className="btn btn-primary"  type='submit'  value='Sign In' />
+                                {/* <button className="btn btn-primary">Sign In</button> */}
                             </div>
                         </div>
                     </div>
