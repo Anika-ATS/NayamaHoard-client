@@ -12,14 +12,14 @@ import t10 from '../../../assets/img/t10.webp';
 
 const Gallery = () => {
     return (
-        <div className="bg-base-200">
+        <div >
             <h1 className=" py-10 text-center text-purple-800 text-bold text-4xl">Nyama Gallery</h1>
         <Marquee>
-            <div className="grid gap-x-4 gap-y-4 grid-cols-10">               
+            <div className="grid gap-x-4 gap-y-4 grid-cols-10 bg-base-300">               
                 {/* 1 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t1} alt="Shoes" className="rounded-xl" />
+                        <img src={t1} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                     
                     {/* <div className="card-body items-center text-center"></div> */}
@@ -30,7 +30,7 @@ const Gallery = () => {
                 {/* 2 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t2} alt="Shoes" className="rounded-xl" />
+                        <img src={t2} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center">Hello from Us!</p>
                     {/* <div className="card-body items-center text-center">
@@ -44,7 +44,7 @@ const Gallery = () => {
                 {/* 3 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t3}alt="Shoes" className="rounded-xl" />
+                        <img src={t3}alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center">Are you like Gray?</p>
                     {/* <div >                       
@@ -57,7 +57,7 @@ const Gallery = () => {
                 {/* 4 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t4} alt="Shoes" className="rounded-xl" />
+                        <img src={t4} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                             
                         <p className="card-body items-center text-center">
@@ -69,7 +69,7 @@ const Gallery = () => {
                 {/* 5 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t5} alt="" className="rounded-xl" />
+                        <img src={t5} alt="" className="rounded-xl hover:scale-75" />
                     </figure>
                     
                     <p className="card-body items-center text-center pb-24">I'm Dragon</p>
@@ -79,7 +79,7 @@ const Gallery = () => {
                 {/* 6 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t6} alt="Shoes" className="rounded-xl" />
+                        <img src={t6} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center pb-7"> Puppy</p>
                     
@@ -87,7 +87,7 @@ const Gallery = () => {
                 {/* 7 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t7} alt="" className="rounded-xl" />
+                        <img src={t7} alt="" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center pb-7">I'm bore now!</p>
                   
@@ -95,7 +95,7 @@ const Gallery = () => {
                 {/* 8 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t8} alt="Shoes" className="rounded-xl" />
+                        <img src={t8} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center pb-24">
                         Mew Mew</p>
@@ -104,7 +104,7 @@ const Gallery = () => {
                 {/* 9 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
-                        <img src={t9} alt="" className="rounded-xl" />
+                        <img src={t9} alt="" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center pb-11">
                         Sleeping Unicorn !!</p>
@@ -113,7 +113,7 @@ const Gallery = () => {
                 {/* 10 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl mr-5">
                     <figure className="px-10 pt-10">
-                        <img src={t10} alt="" className="rounded-xl" />
+                        <img src={t10} alt="" className="rounded-xl hover:scale-75" />
                     </figure>
                     <p className="card-body items-center text-center pb-11">
                         Hamba Hamba</p>

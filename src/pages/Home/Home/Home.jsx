@@ -2,6 +2,7 @@
 
 import SideBar from "../../SideNavBar/SideBar";
 import Banner from "../Banner/Banner";
+import BestSell from "../BestSell-item/BestSell";
 import Gallery from "../Gallery/Gallery";
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
                 </div>
             </div>
             <Gallery></Gallery>
+            <BestSell></BestSell>
         </div>
     );
 };

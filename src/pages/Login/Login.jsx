@@ -4,19 +4,24 @@ import NavBar from '../Shared/NavigationBar/NavBar';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+    // const handleOnLogin=event=>{
+    //     event.preventDefault();
+    // }
     return (
         <div>
             <NavBar></NavBar>
+           
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
                     <figure className="px-5 pt-5 w-1/2 h-1/2">
                         <img  src={login} alt="" className="rounded-xl" /></figure>
-                        <h1 className="ps-5 text-xl font-bold">Haven't Any account?<br/>You just click <Link className='link link:hover text-purple-800' to='/register'>Register</Link> to create one!</h1>
-                        <p className="py-6">
-                          
-                        </p>
+                        <h1 className="ps-5 text-xl font-bold">Haven't Any account?<br/>You just click <Link className='link link:hover text-purple-800' 
+                        to='/register'>Register</Link> to create one!</h1>
+                        
                     </div>
+                    {/* onSubmit={handleOnLogin()} */}
+                    <form >
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
                             <div className="form-control">
@@ -40,8 +45,10 @@ const Login = () => {
                             </div>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
+            
             
         </div>
     );
