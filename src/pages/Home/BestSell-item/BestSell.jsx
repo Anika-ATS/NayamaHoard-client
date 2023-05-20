@@ -1,13 +1,11 @@
 import t1 from '../../../assets/img/t1.jpg';
-import t2 from '../../../assets/img/t2.webp';
+
 import t3 from '../../../assets/img/t3.jpg';
 import t4 from '../../../assets/img/t4.webp';
-import t5 from '../../../assets/img/t5.jpg';
-import t6 from '../../../assets/img/t6.jpg';
+
 import t7 from '../../../assets/img/t7.jpg';
-import t8 from '../../../assets/img/t8.jpg';
-import t9 from '../../../assets/img/t9.jpg';
-import t10 from '../../../assets/img/t10.webp';
+
+
 
 const BestSell = () => {
     return (

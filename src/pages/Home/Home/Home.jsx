@@ -4,6 +4,7 @@ import SideBar from "../../SideNavBar/SideBar";
 import Banner from "../Banner/Banner";
 import BestSell from "../BestSell-item/BestSell";
 import Gallery from "../Gallery/Gallery";
+import History from "../History/History";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             </div>
             <Gallery></Gallery>
             <BestSell></BestSell>
+            <History></History>
         </div>
     );
 };

@@ -15,9 +15,9 @@ const Gallery = () => {
         <div >
             <h1 className=" py-10 text-center text-purple-800 text-bold text-4xl">Nyama Gallery</h1>
         <Marquee>
-            <div className="grid gap-x-4 gap-y-4 grid-cols-10 bg-base-300">               
+            <div className="grid gap-x-4 gap-y-4 grid-cols-10">               
                 {/* 1 */}
-                <div className="card w-96 h-25 bg-base-100 shadow-xl">
+                <div className="card w-96 h-25 bg-base-100 shadow-xl ">
                     <figure className="px-10 pt-10">
                         <img src={t1} alt="Shoes" className="rounded-xl hover:scale-75" />
                     </figure>
