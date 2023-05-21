@@ -1,0 +1,41 @@
+[
+    {
+      "id": "6469ab7caac419cca65de9f9", 
+      "picture1": "https://static-01.daraz.com.bd/p/c6e84ce737fddd4c5cb49808adfdaac0.jpg",
+      "picture2": "https://www.stuffedwithplushtoys.com/assets/full/FHC20.jpg?20220923142932",
+      "name1": "Horse1",
+      "name2": "Horse2",
+      "price1": "200 BDT",
+      "price2": "300 BDT",
+      "Ratings1": "5",
+      "Ratings2": "3"
+    },
+      {
+        "id": "6469ab7ca2d1493e4cecf4fb",
+        "picture1": "https://www.jellycat.com/images/products/medium/ALB3JR.jpg",
+        "picture2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7zASLP_L7Z4JwrFkGlCeg9KrctDmvlCStg&usqp=CAU",
+        "name1": "Dog1",
+        "name2": "Dog2",
+        "price1": "250 BDT",
+        "price2": "300 BDT",
+        "Ratings1": "4",
+        "Ratings2": "5"
+
+      },
+      
+      {
+        "id": "6469ab7c28cc7bdf80f10745",
+        "picture1": "https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg",
+        "name1": "Teddy Bear1",
+        "price1": "700 BDT",
+        "Ratings1": "7",
+        "picture2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDE5jSnmgW49885AOXhFqQU7PBp7-wGelyw&usqp=CAU",
+        "name2": "Teddy Bear2",
+        "price2": "500 BDT",
+        "Ratings2":"6"
+      }
+     
+        
+    
+   
+  ]

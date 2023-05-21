@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner";
 import BestSell from "../BestSell-item/BestSell";
 import Gallery from "../Gallery/Gallery";
 import History from "../History/History";
+import ShopCatagory from "../ShopByCatagory/ShopCatagory";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
                 </div>
             </div>
             <Gallery></Gallery>
+            <ShopCatagory></ShopCatagory>
             <BestSell></BestSell>
             <History></History>
         </div>
