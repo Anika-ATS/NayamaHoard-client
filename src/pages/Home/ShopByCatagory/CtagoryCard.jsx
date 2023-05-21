@@ -28,7 +28,7 @@ const CtagoryCard = ({toys}) => {
                 <p>Rating:{Ratings1}</p>
                 
                 <div className="card-actions">
-                    <Link to={`/checkout/${_id}`}>
+                    <Link to={`/Catagory/${_id}`}>
                       <button className="btn btn-primary">View Details</button>
                     </Link>
                     
@@ -47,7 +47,7 @@ const CtagoryCard = ({toys}) => {
                 <p>Price:{price2}</p>
                 <p>Rating:{Ratings2}</p>
                 <div className="card-actions">
-                    <Link to={`/checkout/${_id}`}>
+                    <Link to={`/Catagory/${_id}`}>
                       <button className="btn btn-primary">View Details</button>
                     </Link>
                 </div>
