@@ -9,7 +9,7 @@ const Login = () => {
     const {SignInUser}=useContext(AuthContext);
     const navigate=useNavigate();
     const location=useLocation();
-    console.log('bye',location);
+    // console.log('bye',location);
     const from=location.state?.from?.pathname||'/';
 
 

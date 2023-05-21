@@ -1,11 +1,12 @@
-import { createBrowserRouter } from "react-router-dom";
+import {Navigate, createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Login/Register";
 import ToysDetails from "../Layout/ToysDetails";
-// import PrivateRoute from "./PrivateRoute";
-// import PrivateRoutes from '../Routes/PrivateRoutes';
+import PrivateRoute from "./PrivateRoute";
+import AllToys from "../pages/All Toys/AllToys";
+
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,12 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>
+
+        },
+        {
+          path:'/Alltoys',
+          element:<AllToys></AllToys>,
+          // loader: ({params})=>fetch(`http://localhost:5000/toys/${params.id}`)
 
         },
         {
@@ -30,7 +37,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/Catagory/:id',
-          element:<ToysDetails></ToysDetails>,
+          element:<PrivateRoute><ToysDetails></ToysDetails> </PrivateRoute> ,
          
           loader: ({params})=>fetch(`http://localhost:5000/toys/${params.id}`),
 

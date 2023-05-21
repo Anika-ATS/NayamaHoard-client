@@ -99,10 +99,10 @@ const SideBar = () => {
                             <li className="rounded-sm ">
                                 <a
                                     href="#"
-                                    className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
+                                 className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5"
                                 >
 
-                                    <span className="text-purple-300">All toys</span>
+                                    <span className="text-purple-300"><Link to='/Alltoys'>All Toys</Link></span>
                                 </a>
                             </li>
                             <li className="rounded-sm">
