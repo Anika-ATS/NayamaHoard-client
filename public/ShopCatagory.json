@@ -1,155 +1,162 @@
 
       [
         {          
-          "picture1": "https://static-01.daraz.com.bd/p/c6e84ce737fddd4c5cb49808adfdaac0.jpg",
+          "picture": "https://static-01.daraz.com.bd/p/c6e84ce737fddd4c5cb49808adfdaac0.jpg",
           
-          "name1": "Murphy",
+          "name": "Murphy",
           
-          "price1": "300 BDT",
+          "price": "300 BDT",
           
-          "Ratings1": 6,
+          "Ratings": 6,
           
-          "SellerName1": "Niyam",
+          "SellerName": "Niyam",
           
-          "SellerEmail1": "niyam@gmail.com",
+          "SellerEmail": "niyam@gmail.com",
           
-          "Stock1": 4,
+          "Stock": 4,
+          "Catagory":"Horse",
          
-          "Description1": "This is very soft and can carry easily"
+          "Description": "This is very soft and can carry easily"
          
         },
         {
-          "picture2": "https://www.stuffedwithplushtoys.com/assets/full/FHC20.jpg?20220923142932",
-          "name2": "Lara",
-          "price2": "350 BDT",
-          "Ratings2": 6,
-          "SellerName2": "Niyama",
-          "SellerEmail2": "niyama@gmail.com",
-          "Stock2": 6,
+          "picture": "https://www.stuffedwithplushtoys.com/assets/full/FHC20.jpg?20220923142932",
+          "name": "Lara",
+          "price": "350 BDT",
+          "Ratings": 6,
+          "SellerName": "Niyama",
+          "SellerEmail": "niyama@gmail.com",
+          "Stock": 6,
+          "Catagory":"Horse",
           "Description": "This is very soft and can carry easily"
 
         },
         {
           
-          "picture1": "https://www.jellycat.com/images/products/medium/ALB3JR.jpg",
+          "picture": "https://www.jellycat.com/images/products/medium/ALB3JR.jpg",
           
-          "name1": "Della",
+          "name": "Della",
           
-          "price1": "400 BDT",
+          "price": "400 BDT",
           
-          "Ratings1": 6,
+          "Ratings": 6,
        
-          "SellerName1": "Kiyam",
+          "SellerName": "Kiyam",
+          "Catagory":"Dog",
          
-          "SellerEmail1": "kiyam@gmail.com",
+          "SellerEmail": "kiyam@gmail.com",
           
-          "Stock1": 4,
+          "Stock": 4,
       
-          "Description1": "This is very small and you can carry easily"
+          "Description": "This is very small and you can carry easily"
       
         },
         {
-          "picture2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7zASLP_L7Z4JwrFkGlCeg9KrctDmvlCStg&usqp=CAU",
-          "name2": "Duffy","price2": "300 BDT",   "Ratings2": 9, "SellerName2": "Yiyama","SellerEmail2": "yiyama@gmail.com",    "Stock2": 9,    "Description": "This is new item."
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl7zASLP_L7Z4JwrFkGlCeg9KrctDmvlCStg&usqp=CAU",
+          "name": "Duffy","price": "300 BDT",   "Ratings": 9, "SellerName": "Yiyama","Catagory":"Dog","SellerEmail": "yiyama@gmail.com",    "Stock": 9,    "Description": "This is new item."
         },
         {
           
-          "picture1": "https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg",
+          "picture": "https://m.media-amazon.com/images/I/91oxSXgVD6L.jpg",
           
-          "name1": "Jeri",
+          "name": "Jeri",
           
-          "price1": "700 BDT",
+          "price": "700 BDT",
           
-          "Ratings1": 6,
+          "Ratings": 6,
          
-          "SellerName1": "Siyam",
+          "SellerName": "Siyam",
           
-          "SellerEmail1": "siyam@gmail.com",
+          "SellerEmail": "siyam@gmail.com",
       
-          "Stock1": 14,
+          "Stock": 14,
+          "Catagory":"Teddy Bear",
           
-          "Description1": "The new member of our shop"
+          "Description": "The new member of our shop"
   
         },
         {
-          "picture2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDE5jSnmgW49885AOXhFqQU7PBp7-wGelyw&usqp=CAU",
-          "name2": "Belinda",
-          "price2": "300 BDT",
-          "Ratings2": 7,
-          "SellerName2": "Tiyasa",
-          "SellerEmail2": "tiyasa@gmail.com","Stock2": 24,     
+          "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDE5jSnmgW49885AOXhFqQU7PBp7-wGelyw&usqp=CAU",
+          "name": "Belinda",
+          "price": "300 BDT",
+          "Ratings": 7,
+          "SellerName": "Tiyasa","Catagory":"Teddy Bear",
+          "SellerEmail": "tiyasa@gmail.com","Stock": 24,     
              "Description": "This is new Belinda Teddy."
         },
 
 
         {
           
-          "picture1": "https://lzd-img-global.slatic.net/g/p/c43f1f763b840f02a570b3cdeedd46e3.jpg_720x720q80.jpg_.webp",
+          "picture": "https://lzd-img-global.slatic.net/g/p/c43f1f763b840f02a570b3cdeedd46e3.jpg_720x720q80.jpg_.webp",
           
-          "name1": "Alyssa",
+          "name": "Alyssa",
          
-          "price1": "380 BDT",
+          "price": "380 BDT",
         
-          "Ratings1": 6,
+          "Ratings": 6,
           
-          "SellerName1": "Osiyam",
+          "SellerName": "Osiyam",
           
-          "SellerEmail1": "osiyam@gmail.com",
+          "SellerEmail": "osiyam@gmail.com",
        
-          "Stock1": 34,
-         
-          "Description1": "This is very soft and can carry easily"
+          "Stock": 34,
+          "Catagory":"Unicorn",
+          "Description": "This is very soft and can carry easily"
          
         },{
-          "picture2": "https://www.target.com.au/medias/static_content/product/images/full/59/75/A1415975.jpg?impolicy=product_portrait_hero",
-          "name2": "Corina",  "price2": "400 BDT","Ratings2": 6,"SellerName2": "Osiyama",
-          "SellerEmail2": "osiyama@gmail.com", "Stock2": 24, "Description": "This is very soft and can carry easily"
+          "picture": "https://www.target.com.au/medias/static_content/product/images/full/59/75/A1415975.jpg?impolicy=product_portrait_hero",
+          "name": "Corina",  "price": "400 BDT","Ratings": 6,"SellerName": "Osiyama",
+          "SellerEmail": "osiyama@gmail.com", "Stock": 24, "Description": "This is very soft and can carry easily","Catagory":"Unicorn"
 
         },
         {
          
-          "picture1": "https://www.jellycat.com/images/products/medium/BAS3KIT.jpg",
+          "picture": "https://www.jellycat.com/images/products/medium/BAS3KIT.jpg",
           
-          "name1": "Nelda",
+          "name": "Nelda",
      
-          "price1": "900 BDT",
+          "price": "900 BDT",
           
-          "Ratings1": 6,
+          "Ratings": 6,
         
-          "SellerName1": "Ninam",
+          "SellerName": "Ninam",
           
-          "SellerEmail1": "ninam@gmail.com",
+          "SellerEmail": "ninam@gmail.com",
           
-          "Stock1": 14,
+          "Stock": 14,
+          "Catagory":"cat",
+          
          
-          "Description1": "This is very soft and can carry easily"
+          "Description": "This is very soft and can carry easily"
   
         },{
 
-          "picture2": "https://cdn1.tedsby.com/tb/medium/storage/5/8/1/581406/collectible-cat-lps-kitty-little-kitten-teddy-replica-pet-realistic-animal-toy-personal.jpg",     "name2": "Hoover","price2": "1200 BDT",  "Ratings2": 10,"SellerName2": "Ninama","SellerEmail2": "ninama@gmail.com", "Stock2": 4,        "Description": "This is very soft and can carry easily"
+          "picture": "https://cdn1.tedsby.com/tb/medium/storage/5/8/1/581406/collectible-cat-lps-kitty-little-kitten-teddy-replica-pet-realistic-animal-toy-personal.jpg",     "name": "Hoover","price": "1200 BDT",  "Ratings": 10,"SellerName": "Ninama","SellerEmail": "ninama@gmail.com", "Stock": 4,        "Description": "This is very soft and can carry easily","Catagory":"cat"
         },
         {
           
-          "picture1": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19778102/2022/11/16/46e5ebf7-82e0-4f92-8871-93149a7972351668597779620MiradaKidsBrownSittingJerrySoftToysAndDolls1.jpg",
+          "picture": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/19778102/2022/11/16/46e5ebf7-82e0-4f92-8871-93149a7972351668597779620MiradaKidsBrownSittingJerrySoftToysAndDolls1.jpg",
           
-          "name1": "Rodriquez",
+          "name": "Rodriquez",
        
-          "price1": "600 BDT",
+          "price": "600 BDT",
           
-          "Ratings1": 6,
+          "Ratings": 6,
          
-          "SellerName1": "Shihan",
+          "SellerName": "Shihan",
  
-          "SellerEmail1": "shihan@gmail.com",
+          "SellerEmail": "shihan@gmail.com",
        
-          "Stock1": 64,
+          "Stock": 64,
+          "Catagory":"rat",
         
-          "Description1": "This is very soft and can carry easily"
+          "Description": "This is very soft and can carry easily"
          
         },{
-          "picture2": "https://i.ebayimg.com/thumbs/images/g/H2gAAOSweO5jaKoS/s-l300.jpg",
-          "name2": "Liliana","price2": "300 BDT", "Ratings2": 4,   
-                "SellerName2": "Soumi",   "SellerEmail2": "soumi@gmail.com",  "Stock2": 14,
+          "picture": "https://i.ebayimg.com/thumbs/images/g/H2gAAOSweO5jaKoS/s-l300.jpg",
+          "name": "Liliana","price": "300 BDT", "Ratings": 4,  "Catagory":"rat",  
+                "SellerName": "Soumi",   "SellerEmail": "soumi@gmail.com",  "Stock": 14,
                 "Description": "This is very soft and can carry easily"
 
 
