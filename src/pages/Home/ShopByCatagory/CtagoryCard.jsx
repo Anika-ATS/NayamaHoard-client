@@ -7,7 +7,7 @@ import 'react-tabs/style/react-tabs.css';
 
 const CtagoryCard = ({ toy }) => {
 
-    const { _id, picture, name, price, Catagory, Ratings } = toy;
+    const { _id, picture, name, price, SubCatagory, Ratings } = toy;
     // const {TempCatagoryData}=ShopCatagory();
     // console.log(TempCatagoryData);
     // const {  Catagory } = toy;
@@ -35,10 +35,10 @@ const CtagoryCard = ({ toy }) => {
 
         <div >
             
-            {/* <button className="btn btn-outline btn-accent">{Catagory}</button> */}
+          
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
-                    <Tab><button className="btn btn-outline btn-accent">Catagory:{Catagory}</button></Tab>
+                    <Tab><button className="btn btn-outline btn-accent">SubCatagory:{SubCatagory}</button></Tab>
                 </TabList>
                 <TabPanel>
                     <div className="card w-96 bg-base-100 shadow-xl">

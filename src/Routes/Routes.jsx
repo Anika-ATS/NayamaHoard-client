@@ -38,7 +38,8 @@ const router = createBrowserRouter([
         },
         {
           path:'AddAtoy',
-          element:<AddAtoy></AddAtoy>
+          element:<AddAtoy></AddAtoy>,
+          // loader: ({params})=>fetch(`http://localhost:5000/toy/${params.id}`),
 
         },
         {

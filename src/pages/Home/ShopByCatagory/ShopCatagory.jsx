@@ -18,8 +18,8 @@ const ShopCatagory = () => {
         <div>
             
            
-            <h1 className='py-10 text-center text-purple-800 text-bold text-4xl hover:opacity-75'>Shop Catagory</h1>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
+            <h1 className='mt-12 py-10 text-center text-purple-800 text-bold text-4xl hover:opacity-75 hover:bg-base-800  mb-12'>All SubCategories Product</h1>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12'>
             {
                   ToyData.map(toy=><CtagoryCard
                     key={toy.id}

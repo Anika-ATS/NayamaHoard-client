@@ -19,7 +19,7 @@ const Gallery = () => {
                 {/* 1 */}
                 <div className="card w-96 h-25 bg-base-100 shadow-xl ">
                     <figure className="px-10 pt-10">
-                        <img src={t1} alt="Shoes" className="rounded-xl hover:scale-75" />
+                        <img src={t1} alt="Shoes" className="bg-no-repeat bg-center rounded-xl hover:scale-75" />
                     </figure>
                     
                     {/* <div className="card-body items-center text-center"></div> */}
