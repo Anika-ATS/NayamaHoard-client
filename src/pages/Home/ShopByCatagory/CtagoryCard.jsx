@@ -1,4 +1,4 @@
-
+// import swal from 'sweetalert';
 import { useState } from 'react';
 
 import { Link } from 'react-router-dom';
@@ -34,8 +34,8 @@ const CtagoryCard = ({ toy }) => {
     return (
 
         <div >
-            
-          
+
+
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab><button className="btn btn-outline btn-accent">SubCatagory:{SubCatagory}</button></Tab>
@@ -55,8 +55,12 @@ const CtagoryCard = ({ toy }) => {
                             <p>Rating:{Ratings}</p>
 
                             <div className="card-actions">
+                      
+                                    
                                 <Link to={`/Catagory/${_id}`}>
-                                    <button className="btn btn-primary">View Details</button>
+                                    
+
+                                    <button className="btn btn-primary" >View Details</button>
                                 </Link>
 
 
@@ -66,27 +70,6 @@ const CtagoryCard = ({ toy }) => {
                 </TabPanel>
             </Tabs>
 
-
-
-            {/* <h1>b:{TempCatagoryData}</h1> */}
-            {/* <Tabs>
-                <TabList>
-                    {
-                        Catagory.map(c => <Tab >{c}</Tab> )
-                    }
-                                       
-                </TabList>
-                
-                {
-                        toy.map(t => <TabPanel> 
-                            <TabPanelC toyss={t}></TabPanelC> 
-                        </TabPanel> )
-                 }
-
-                
-                
-                
-            </Tabs> */}
 
         </div>
     );

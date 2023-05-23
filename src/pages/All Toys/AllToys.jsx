@@ -1,9 +1,9 @@
 // import { useLoaderData } from "react-router-dom";
-import { useContext } from 'react';
+// import { useContext } from 'react';
 import NavBar from '../Shared/NavigationBar/NavBar';
-import { AuthContext } from '../../Providers/AuthProviders';
+// import { AuthContext } from '../../Providers/AuthProviders';
 const AllToys = () => {
-    const {user}=useContext(AuthContext);
+    // const {user}=useContext(AuthContext);
     // const url=``;
     
     return (

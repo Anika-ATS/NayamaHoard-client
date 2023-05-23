@@ -11,12 +11,11 @@ const AddAtoy = () => {
         const url=form.url.value;
         const Sname=form.Sname.value;
         const email=form.email.value;
-        
-        
         const subCategory=form.subCategory.value;
         const price=form.price.value;
         const rating=form.rating.value;      
         const stock=form.stock.value;
+        const detail=form.detail.value;
         const add={
             Sname,
             name,
@@ -24,7 +23,7 @@ const AddAtoy = () => {
             url,
             subCategory,
             price,
-            stock,rating,
+            stock,rating,detail
 
         }
         // console.log(Sname,name,email, url,subCategory,price,stock,rating);
@@ -45,6 +44,7 @@ const AddAtoy = () => {
                     swal("Good job!", "You Added a data successfully!", "success", {
                         button: "Aww yiss!",
                       });
+                    // alert('data added');
                 }
 
             })
