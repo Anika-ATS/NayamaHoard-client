@@ -8,8 +8,8 @@ import GRP1 from '../../../assets/img/GRP1.avif';
 
 const Banner = () => {
     return (
-        <div className="carousel w-full h-[600px]">
-            <div id="slide1" className="carousel-item relative w-full">
+        <div className="carousel  h-[600px] ">
+            <div id="slide1" className="carousel-item relative lg:w-full ">
                 <img src={GRP1} className="w-full" />
                 <div className="absolute  left-5  bottom-1/2 ">
                     <div className='pl-5 pt-2 space-y-7 w-1/3'>

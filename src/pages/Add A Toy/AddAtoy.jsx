@@ -1,25 +1,14 @@
-// import { Link } from "react-router-dom";
-// import { useLoaderData } from "react-router-dom";
+import swal from 'sweetalert';
 import NavBar from "../Shared/NavigationBar/NavBar";
-// import { useContext } from "react";
-// import { AuthContext } from "../../Providers/AuthProviders";
-
 
 const AddAtoy = () => {
-    // const toy = useLoaderData();
-    // const{_id}=toy;
-
-    // const {user}=useContext(AuthContext);
-
-
-
 
     const handleOnSubmit=event=>{
         event.preventDefault();
         const form=event.target;
         
         const name=form.name.value;
-        const photo=form.url.value;
+        const url=form.url.value;
         const Sname=form.Sname.value;
         const email=form.email.value;
         
@@ -29,24 +18,47 @@ const AddAtoy = () => {
         const rating=form.rating.value;      
         const stock=form.stock.value;
         const add={
-            CustomerName:Sname,
+            Sname,
             name,
+            email,
+            url,
             subCategory,
             price,
-            stock
-            // toy:_id
-            
+            stock,rating,
 
         }
+        // console.log(Sname,name,email, url,subCategory,price,stock,rating);
     
-       console.log(add);}
+       console.log(add);
+       fetch('http://localhost:5000/AddAtoy',{
+           method:'POST',
+           headers:{
+              'content-type':'application/json'
+           },
+           body:JSON.stringify(add)
+       })
+       .then(res=>res.json())
+            .then(data=> {
+                console.log(data);
+                if(data.insertedId)
+                {
+                    swal("Good job!", "You Added a data successfully!", "success", {
+                        button: "Aww yiss!",
+                      });
+                }
+
+            })
+            
+   
+    }
     return (
         <div>
             <NavBar></NavBar>
-            <h1 className='mt-5  text-center text-purple-800 text-bold text-4xl hover:opacity-75 hover:bg-base-800 '>Add A Toy </h1>
+            <div className="bg-base-300 h-20 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+            <h1 className='mt-5 pt-3  text-center text-base-300 text-bold text-4xl hover:opacity-75 hover:bg-base-800 mb-5'>Add A Toy </h1></div>
              
             <form onSubmit={handleOnSubmit}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 " >
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5  " >
             
                 
                 <div className="form-control">
@@ -57,9 +69,9 @@ const AddAtoy = () => {
                 </div>
                 <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Photo URL</span>
+                        <span className="label-text ">Photo URL</span>
                     </label>
-                    <input type="text" placeholder="Photo" name='photo' className="input input-bordered" />
+                    <input type="file"  placeholder="Photo" name='url' className="input input-bordered pt-2" />
                 </div>
                 
                 

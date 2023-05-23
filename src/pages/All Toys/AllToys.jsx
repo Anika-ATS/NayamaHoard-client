@@ -1,8 +1,10 @@
 // import { useLoaderData } from "react-router-dom";
+import { useContext } from 'react';
 import NavBar from '../Shared/NavigationBar/NavBar';
+import { AuthContext } from '../../Providers/AuthProviders';
 const AllToys = () => {
-    // const toys = useLoaderData();
-    // const { _id,name1,SellerName1,price1, Stock1, name2,SellerName2,price2,Stock2} = toys;
+    const {user}=useContext(AuthContext);
+    // const url=``;
     
     return (
         <div><NavBar></NavBar>
