@@ -16,7 +16,7 @@ const SideBar = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/Alltoys'>All Toys</Link></li>
         
-        <li><Link to=''>Blogs</Link></li>
+        <li><Link to='/blog'>Blogs</Link></li>
 
         {user?.email ? <>
             
@@ -121,7 +121,7 @@ const SideBar = () => {
                                     className="flex items-center p-2 space-x-3 rounded-md bg-black mb-5 w-40"
                                 >
 
-                                    <span className="text-purple-300">Blogs</span>
+                                    <span className="text-purple-300"><Link to='/blog'>Blogs</Link> </span>
 
                                 </a>
                             </li>

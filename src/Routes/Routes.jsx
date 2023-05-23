@@ -9,6 +9,7 @@ import AllToys from "../pages/All Toys/AllToys";
 import AddAtoy from "../pages/Add A Toy/AddAtoy";
 import MyToys from "../pages/MyToys/MyToys";
 import PrivateRoute from "./PrivateRoute";
+import Blog from "../pages/Blog/Blog";
 
 
 
@@ -41,6 +42,12 @@ const router = createBrowserRouter([
         {
           path:'/AddAtoy',
           element:<AddAtoy></AddAtoy>,
+          
+
+        },
+        {
+          path:'/blog',
+          element:<Blog></Blog>
           
 
         },
