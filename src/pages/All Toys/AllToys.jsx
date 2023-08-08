@@ -1,42 +1,58 @@
-// import { useLoaderData } from "react-router-dom";
-// import { useContext } from 'react';
+
+import useToyData from '../../Hook/useToyData';
 import NavBar from '../Shared/NavigationBar/NavBar';
-// import { AuthContext } from '../../Providers/AuthProviders';
+import DisplayToy from './DisplayToy';
+
 const AllToys = () => {
-    // const {user}=useContext(AuthContext);
-    // const url=``;
+
+    const [ToysData]=useToyData();
     
     return (
-        <div><NavBar></NavBar>
-        <div className="overflow-x-auto">
-            <table className="table table-zebra w-full">
-                {/* head */}
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Seller Name</th>
-                        <th>Toy Name</th>
-                        <th>Sub Catagory</th>
-                        <th>Price</th>
-                        <th>Available Quantity</th>
+        <div>
+            <NavBar></NavBar>
+
+                 <div className="mt-10 mx-60 mb-28">
+       
+                       <div className="overflow-x-auto ">
+                        <table className="table table-zebra">
+                        <thead  className='bg-base-300'>
+                            <tr className='text-blue-950 '>
+                                <th>No</th>
+                                <th>Seller Name</th>
+                                <th>Toy Name</th>
+                                <th>Sub Catagory</th>
+                                <th>Price</th>
+                                <th>Available Quantity</th>
                         
-                    </tr>
-                </thead>
-                <tbody>
-                    {/* row 1 */}
-                    <tr>
-                        <th>1</th>
-                        <td></td>
-                        <td></td>
-                        <td>Horse</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
+                            </tr>
+                        </thead>
+                        </table>
+                    </div>
+                        {ToysData.map(Toys=><DisplayToy
+
+                            key={Toys._id}
+                            Toys={Toys}
+                        
+                        
+                        
+                        
+                        ></DisplayToy>)
+
+
+
+
+
+                        }
+        
+
+                        
+        
+        
+
+
+
         </div>
-        </div>
+      </div> 
     );
 };
 

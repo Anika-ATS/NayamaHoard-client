@@ -29,7 +29,7 @@ const AddAtoy = () => {
         // console.log(Sname,name,email, url,subCategory,price,stock,rating);
     
        console.log(add);
-       fetch('http://localhost:5000/AddAtoy',{
+       fetch('https://nyama-hoard-server.vercel.app/AddAtoy',{
            method:'POST',
            headers:{
               'content-type':'application/json'

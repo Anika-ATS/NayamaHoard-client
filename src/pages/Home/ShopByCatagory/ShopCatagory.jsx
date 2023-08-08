@@ -4,7 +4,7 @@ const ShopCatagory = () => {
     const [ToyData, setToyData]=useState([]);
   
     useEffect(()=>{
-        fetch("http://localhost:5000/toy")
+        fetch("https://h-nyama-hoard-server.vercel.app/toy")
       
             .then(res=>res.json())
             .then(data=>setToyData(data))

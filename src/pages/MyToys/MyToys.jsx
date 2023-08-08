@@ -6,7 +6,7 @@ import ToysRow from './ToysRow';
 const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [MyToy, setMyToy] = useState([]);
-    const url = `http://localhost:5000/AddAtoy?email=${user.email}`;
+    const url = `https://h-nyama-hoard-server.vercel.app/AddAtoy?email=${user.email}`;
 
     useEffect(() => {
         fetch(url)
@@ -21,7 +21,7 @@ const MyToys = () => {
         const proceed=confirm('Are you sure to delete toy? ');
         if(proceed)
         {
-            fetch(`http://localhost:5000/AddAtoy/${id}`,{method:'DELETE'})
+            fetch(`https://h-nyama-hoard-server.vercel.app/AddAtoy/${id}`,{method:'DELETE'})
       
             .then(res=>res.json())
             .then(data=>{

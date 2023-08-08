@@ -12,10 +12,11 @@ const Register = () => {
     const form=event.target;
     const name=form.name.value;
     const email=form.email.value;
-    const photo=form.photo.value;
+   
     const password=form.password.value;
+    const photo=form.photo.value;
 
-   console.log(name,password,email);
+   console.log(name,password,email, photo);
 
     //create user
      createUser(email,password)
@@ -69,7 +70,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Photo Url</span>
                                 </label>
-                                <input type="text" placeholder="photo" name='photo' className="input input-bordered" />
+                                <input type="text" placeholder="Photo" name='photo' className="input input-bordered" />
                             </div>
                             
                             <div className="form-control mt-6">

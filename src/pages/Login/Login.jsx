@@ -68,7 +68,7 @@ const Login = () => {
                             </div>
                             <div><button className="btn btn-outline btn-primary">Google Sign-in</button></div>
                             <div className="form-control mt-6">
-                                
+                                 
                                 <input  className="btn btn-primary"  type='submit'  value='Login' />
                             </div>
                         </div>

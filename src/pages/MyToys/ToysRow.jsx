@@ -5,27 +5,7 @@ const ToysRow = ({ Mytoy,handleDelete }) => {
 
     return (
         <div>
-            {/* <div className="overflow-x-auto w-full">
-                <table className="table w-full">
-                    {/* head }
-                    <thead>
-                        <tr>
-                           
-                            <th>Toy Img</th>
-                            <th>Toy Name</th>
-                            
-                            <th>Seller Name</th>
-                            <th>Email</th>
-                            <th>Sub-Catagory</th>
-                            <th>Price</th>
-                            <th>Available quantity</th>
-                            <th>Rating</th>
-                            <th>Detail description</th>                         
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody> */}
-                        {/* row 1 */}
+            
                         <tr>                            
                             <td>
                     
@@ -37,7 +17,7 @@ const ToysRow = ({ Mytoy,handleDelete }) => {
                         
                     
                             </td>
-                            <td><div>{name}</div></td>
+                            <td>{name}</td>
                             <td>{Sname}</td>
                             <td>{email}</td>
                             <td>{subCategory}</td>
@@ -52,13 +32,7 @@ const ToysRow = ({ Mytoy,handleDelete }) => {
                                 </th>
                         </tr>
                        
-{/*                       
-                       
-                    </tbody>
-                   
 
-                </table>
-            </div> */}
 
         </div>
     );

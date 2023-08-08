@@ -1,4 +1,4 @@
-import {Navigate, createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
           path:'/Catagory/:id',
           element:<PrivateRoute><ToysDetails></ToysDetails> </PrivateRoute>,
          
-          loader: ({params})=>fetch(`http://localhost:5000/toy/${params.id}`),
+          loader: ({params})=>fetch(`https://h-nyama-hoard-server.vercel.app/toy/${params.id}`),
 
 
 
