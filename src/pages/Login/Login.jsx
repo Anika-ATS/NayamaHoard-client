@@ -4,6 +4,7 @@ import NavBar from '../Shared/NavigationBar/NavBar';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Providers/AuthProviders';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const {SignInUser}=useContext(AuthContext);
@@ -66,7 +67,20 @@ const Login = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div><button className="btn btn-outline btn-primary">Google Sign-in</button></div>
+                            <div>
+{/*                                 
+                                <button className="btn btn-outline btn-primary">Google Sign-in
+                              
+
+                                </button> */}
+                                  
+                                <SocialLogin></SocialLogin>
+                                
+                                
+                            </div>
+
+
+
                             <div className="form-control mt-6">
                                  
                                 <input  className="btn btn-primary"  type='submit'  value='Login' />

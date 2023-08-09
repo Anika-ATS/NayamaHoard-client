@@ -4,10 +4,17 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+// import useToy from '../../../Hook/useToy';
 
-const CtagoryCard = ({ toy }) => {
+const CtagoryCard = ({toy}) => {
+    // const[ToyData]=useToy();
 
-    const { _id, picture, name, price, SubCatagory, Ratings } = toy;
+    const { _id, picture, name, price,  Ratings ,SubCatagory} = toy;
+
+    // const Dog=ToyData.filter(toy=>toy.SubCatagory==='DOG');
+    // const Horse=ToyData.filter(toy=>toy.SubCatagory==='HORSE');
+    // const TEDDYBEAR=ToyData.filter(toy=>toy.SubCatagory==='TEDDY BEAR');
+  
     // const {TempCatagoryData}=ShopCatagory();
     // console.log(TempCatagoryData);
     // const {  Catagory } = toy;
@@ -38,7 +45,9 @@ const CtagoryCard = ({ toy }) => {
 
             <Tabs selectedIndex={tabIndex} onSelect={(index) => setTabIndex(index)}>
                 <TabList>
-                    <Tab><button className="btn btn-outline btn-accent">SubCatagory:{SubCatagory}</button></Tab>
+                    <Tab>SubCatagory:{SubCatagory}</Tab>
+                    {/* <Tab>{Horse} </Tab>
+                    <Tab>{TEDDYBEAR}</Tab> */}
                 </TabList>
                 <TabPanel>
                     <div className="card w-96 bg-base-100 shadow-xl">

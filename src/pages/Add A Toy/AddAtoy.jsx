@@ -4,6 +4,7 @@ import NavBar from "../Shared/NavigationBar/NavBar";
 const AddAtoy = () => {
 
     const handleOnSubmit=event=>{
+        // console.log(event)
         event.preventDefault();
         const form=event.target;
         
@@ -47,7 +48,10 @@ const AddAtoy = () => {
                     // alert('data added');
                 }
 
-            })
+            }).catch(error => {
+                console.error("Error:", error);
+                // Handle the error gracefully, show an error message to the user, etc.
+            });
             
    
     }
@@ -131,6 +135,7 @@ const AddAtoy = () => {
                 <div className="form-control mt-8 w-36">
 
                     <input className="btn btn-primary btn-block"  type='submit' value='Add a Toy' />
+
                 </div>
             </div>
            

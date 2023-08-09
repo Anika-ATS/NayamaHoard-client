@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-// import swal from 'sweetalert'
+import swal from 'sweetalert'
 import NavBar from '../Shared/NavigationBar/NavBar';
 import { AuthContext } from '../../Providers/AuthProviders';
 import ToysRow from './ToysRow';
@@ -28,8 +28,8 @@ const MyToys = () => {
                 console.log(data);
                 if(data.deleteCount >0)
                 {
-                    // swal("Toy deleted") ;
-                    const UndeletedToy=MyToy.filter(MyToy =>Mytoy._id !==id);
+                    swal("Toy deleted") ;
+                    const UndeletedToy=MyToy.filter(MyToy =>MyToy._id !==id);
                     setMyToy(UndeletedToy);
                 }
             })
@@ -62,7 +62,7 @@ const MyToys = () => {
                             <th>Available quantity</th>
                             <th>Rating</th>
                             <th>Detail description</th>                         
-                            <th></th>
+                            <th>Edit</th>
                         </tr>
                     </thead>
                     

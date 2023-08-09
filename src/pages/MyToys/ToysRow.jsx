@@ -5,6 +5,13 @@ const ToysRow = ({ Mytoy,handleDelete }) => {
 
     return (
         <div>
+             <div>
+                  <div className="overflow-x-auto ">
+                   <table className="table table-zebra">
+
+
+                    <tbody className='border border-b-black'>
+
             
                         <tr>                            
                             <td>
@@ -26,14 +33,22 @@ const ToysRow = ({ Mytoy,handleDelete }) => {
                             <td>{rating}</td>
                             <td>{detail}</td>
              
-                                <th>
+                            <td>
                                     <button className="btn btn-ghost btn-xs">Update</button>
                                     <button className="btn btn-ghost btn-xs"onClick={() =>handleDelete(_id)} >Delete</button>
-                                </th>
+                            </td>
                         </tr>
+                        </tbody >
+                        </table>
                        
 
 
+        
+        
+       
+       
+        </div>
+        </div>
         </div>
     );
 };
